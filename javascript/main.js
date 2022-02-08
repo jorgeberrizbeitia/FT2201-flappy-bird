@@ -20,7 +20,6 @@ const startGame = () => {
   newGame = new Game()
   console.log(newGame)
   newGame.gameLoop()
-
 }
 
 
