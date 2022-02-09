@@ -5,9 +5,9 @@ class Game {
   constructor() {
     // todas nuestras propiedades del juego
     this.bg = new Image();
-    this.bg.src = "../images/bg.png" // async
+    this.bg.src = "images/bg.png" // async
     this.pollo = new Pollo()
-    this.pipeArr = [ new Pipe(0, "../images/obstacle_top.png") ] // esto es un array con varios elementos
+    this.pipeArr = [ new Pipe(0, "images/obstacle_top.png") ] // esto es un array con varios elementos
     // creamos un array en vez de multiples propiedades
     // this.pipe = new Pipe()
     // this.pipe1 = new Pipe()
@@ -22,12 +22,12 @@ class Game {
     if (lastPipe.x < (canvas.width - this.pipeSeparation)) {
       // aqui agrego un nuevo pipe
       let randomY = Math.random() * -100
-      let newPipe = new Pipe(randomY, "../images/obstacle_top.png")
+      let newPipe = new Pipe(randomY, "images/obstacle_top.png")
       this.pipeArr.push(newPipe)
 
       // agregar el otro pipe de abajo
       let randomYDown = randomY + newPipe.height + 200
-      let newPipeDown = new Pipe(randomYDown, "../images/obstacle_bottom.png")
+      let newPipeDown = new Pipe(randomYDown, "images/obstacle_bottom.png")
       this.pipeArr.push(newPipeDown)
 
     }

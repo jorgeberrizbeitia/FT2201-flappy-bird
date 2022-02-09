@@ -7,7 +7,7 @@ class Pollo {
     this.width = 50;
     this.height = 50;
     this.img = new Image()
-    this.img.src = "../images/flappy.png"
+    this.img.src = "images/flappy.png"
     this.gravitySpeed = 2.5;
     this.jumpSpeed = 40; // o podría ser: this.gravitySpeed * 10
   }
